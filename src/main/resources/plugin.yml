@@ -1,3 +1,5 @@
 name: mTemplate2
 version: '${version}'
 main: br.com.gokan.mtemplate2.Main
+softdepend:
+  -

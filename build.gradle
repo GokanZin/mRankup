@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'br.com.gokan'
+group = 'br.com.gokan.mtemplate2'
 version = '0.1'
 
 repositories {
@@ -18,7 +18,17 @@ repositories {
 }
 
 dependencies {
-compileOnly "org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT"
+    compileOnly files("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/craftbukkit-1.7.10-R.jar")
+    compileOnly files("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/LegendChat.jar")
+    compileOnly files("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/PlaceholderAPI-2.10.10.jar")
+    compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/Vault (1).jar')
+    compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/CustomNPC-Plus-1.9.2.jar')
+    compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/modid.jar')
+}
+
+jar {
+    archiveFileName.set("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Servidor_Teste/plugins/mTemplate2.jar")
+
 }
 
 def targetJavaVersion = 8
