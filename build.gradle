@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'br.com.gokan.mtemplate2'
+group = 'br.com.gokan'
 version = '0.1'
 
 repositories {
