@@ -1,4 +1,4 @@
-package br.com.gokan.utils;
+package br.com.gokan.mtemplate.utils;
 
 public class ColorConsole {
 

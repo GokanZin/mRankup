@@ -1,17 +1,18 @@
-package br.com.gokan.utils;
+package br.com.gokan.mtemplate.utils;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.List;
 
+
 public class MessageBuilder {
 
     private String message;
     private List<String> messageList;
     private Sound sound;
-
     public MessageBuilder(String message) {
         this.message = message;
     }
@@ -19,6 +20,21 @@ public class MessageBuilder {
     public MessageBuilder(List<String> messageList) {
         this.messageList = messageList;
     }
+
+    @SuppressWarnings("unchecked")
+    public MessageBuilder(Object object) {
+        if (object instanceof List){
+            List<?> list = (List<?>) object;
+            if (!list.isEmpty()){
+                this.messageList = (List<String>) list;
+            }
+            Bukkit.getConsoleSender().sendMessage(object.toString());
+        }
+        if (object instanceof String){
+            this.message = (String) object;
+        }
+    }
+
 
     public MessageBuilder setTypeSound(Sound sound) {
         this.sound = sound;

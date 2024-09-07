@@ -1,4 +1,4 @@
-package br.com.gokan.utils;
+package br.com.gokan.mtemplate.utils;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;

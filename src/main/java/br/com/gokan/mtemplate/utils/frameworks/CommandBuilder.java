@@ -1,4 +1,4 @@
-package br.com.gokan.utils.frameworks;
+package br.com.gokan.mtemplate.utils.frameworks;
 
 import org.bukkit.command.CommandSender;
 

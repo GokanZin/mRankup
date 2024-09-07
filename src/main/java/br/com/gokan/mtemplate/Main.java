@@ -1,6 +1,6 @@
-package br.com.gokan;
+package br.com.gokan.mtemplate;
 
-import br.com.gokan.utils.ColorConsole;
+import br.com.gokan.mtemplate.utils.ColorConsole;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
