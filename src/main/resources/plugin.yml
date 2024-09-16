@@ -1,5 +1,3 @@
-name: mTemplate2
+name: '${namePlugin}'
 version: '${version}'
-main: br.com.gokan.mtemplate2.Main
-softdepend:
-  -
+main: '${packet}'

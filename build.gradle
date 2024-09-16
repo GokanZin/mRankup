@@ -26,12 +26,17 @@ dependencies {
     compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/modid.jar')
 }
 
-jar {
-    archiveFileName.set("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Servidor_Teste/plugins/mTemplate2.jar")
+def namePlugin = 'mTemplate2'
+def lowerCaseNamePlugin = namePlugin.toLowerCase()
+def packet = "${group}.${lowerCaseNamePlugin}.Main"
+def targetJavaVersion = 8
 
+
+jar {
+    archiveFileName.set("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Servidor_Teste/plugins/${namePlugin}.jar")
 }
 
-def targetJavaVersion = 8
+
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
@@ -50,10 +55,11 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 processResources {
-    def props = [version: version]
+    def props = [version: version, namePlugin: namePlugin, packet: packet]
     inputs.properties props
     filteringCharset 'UTF-8'
     filesMatching('plugin.yml') {
         expand props
     }
+
 }
