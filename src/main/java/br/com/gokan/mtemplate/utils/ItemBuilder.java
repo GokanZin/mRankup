@@ -96,7 +96,7 @@ public class ItemBuilder {
         List<String> lore = itemMeta.getLore();
         if (index >= lore.size()) {
             for (int i = lore.size(); i <= index; i++) {
-                lore.add(""); // Add empty lines if index is beyond current list size
+                lore.add("");
             }
         }
         lore.set(index, line);
@@ -132,13 +132,11 @@ public class ItemBuilder {
     }
 
     public ItemBuilder replace(String target, String replacement) {
-        // Replace in Display Name
         if (itemMeta.hasDisplayName()) {
             String displayName = itemMeta.getDisplayName();
             itemMeta.setDisplayName(displayName.replace(target, replacement));
         }
 
-        // Replace in Lore
         if (itemMeta.hasLore()) {
             List<String> lore = itemMeta.getLore();
             List<String> replacedLore = new ArrayList<>();
