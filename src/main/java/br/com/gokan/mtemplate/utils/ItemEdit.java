@@ -17,7 +17,7 @@ public class ItemEdit {
     private Map<String, String> placeholders;
 
     public ItemEdit(ItemStack item) {
-        this.item = item.clone();  // Clone do item para evitar modificações diretas
+        this.item = item.clone(); 
         ItemMeta meta = this.item.getItemMeta();
 
         if (meta != null && meta.hasLore()) {
@@ -40,7 +40,7 @@ public class ItemEdit {
     }
 
     public ItemEdit editLore(List<String> lore) {
-        this.lore = new ArrayList<>(lore); // Garantir que a lista seja independente
+        this.lore = new ArrayList<>(lore);
         return this;
     }
 
@@ -90,13 +90,6 @@ public class ItemEdit {
         return item;
     }
 
-    public ItemEdit clone() {
-        ItemEdit clone = new ItemEdit(this.item);
-        clone.lore = new ArrayList<>(this.lore);
-        clone.display = this.display;
-        clone.placeholders = new HashMap<>(this.placeholders);
-        return clone;
-    }
 
     private String replacePlaceholder(String text, Map<String, String> placeholders) {
         return placeholders.entrySet().stream()
