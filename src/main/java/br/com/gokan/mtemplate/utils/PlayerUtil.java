@@ -6,6 +6,10 @@ import org.bukkit.inventory.ItemStack;
 
 public class PlayerUtil {
 
+
+
+     //Version 1.7.10 craftbukkit
+    
     public static boolean isSpaceInventory(ItemStack item, Player player) {
         int maxStackSize = item.getMaxStackSize();
         int remainingItems = item.getAmount();
