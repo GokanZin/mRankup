@@ -1,4 +1,4 @@
-package br.com.gokan.mtemplate.utils;
+package br.com.gokan.mreward.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;

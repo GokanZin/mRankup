@@ -18,22 +18,18 @@ repositories {
 }
 
 dependencies {
-    compileOnly files("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/craftbukkit-1.7.10-R.jar")
-    compileOnly files("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/LegendChat.jar")
-    compileOnly files("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/PlaceholderAPI-2.10.10.jar")
-    compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/Vault (1).jar')
-    compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/CustomNPC-Plus-1.9.2.jar')
-    compileOnly files('C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Dependencias/modid.jar')
+    compileOnly fileTree(dir: "C:/Users/pedro/Desktop/Meus projeto/projetos-repository/mGiveReward/libs", include: '*.jar')
 }
 
-def namePlugin = 'mTemplate2'
+def namePlugin = 'mReward'
 def lowerCaseNamePlugin = namePlugin.toLowerCase()
 def packet = "${group}.${lowerCaseNamePlugin}.Main"
 def targetJavaVersion = 8
 
 
 jar {
-    archiveFileName.set("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Servidor_Teste/plugins/${namePlugin}.jar")
+//    archiveFileName.set("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Servidor_Teste/plugins/${namePlugin}.jar")
+    archiveFileName.set("C:/Users/pedro/Desktop/Meus projeto/Servidores/1.12.2/plugins/${namePlugin}.jar")
 }
 
 

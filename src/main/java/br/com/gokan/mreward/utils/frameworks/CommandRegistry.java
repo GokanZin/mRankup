@@ -1,4 +1,4 @@
-package br.com.gokan.mtemplate.utils.frameworks;
+package br.com.gokan.mreward.utils.frameworks;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
