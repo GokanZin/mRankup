@@ -2,4 +2,4 @@ name: '${namePlugin}'
 version: '${version}'
 main: '${packet}'
 softdepend:
-  - 'mAttributes'
+  - ''

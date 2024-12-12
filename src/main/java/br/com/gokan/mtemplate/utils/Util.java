@@ -1,15 +1,43 @@
-package br.com.gokan.mreward.utils;
+package br.com.gokan.mtemplate.utils;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-public class PlayerUtil {
+public class Util {
 
 
+    public static int[] convertSplit(String input) {
+        if (input.isEmpty()) {
+            return new int[0];
+        }
+        String[] parts = input.split(",");
+        int[] result = new int[parts.length];
+        for (int i = 0; i < parts.length; i++) {
+            result[i] = Integer.parseInt(parts[i].trim());
+        }
+        return result;
+    }
 
-     //Version 1.7.10 craftbukkit
-    
+
+    public  String formatterNumber(double numero) {
+        return String.format("%,.0f", numero);
+    }
+
+    public  String formatterNumberType2(double numero) {
+        if (numero < 1000) {
+            return String.format("%.0f", numero);
+        } else if (numero < 1000000) {
+            return String.format("%.0fk", numero / 1000);
+        } else if (numero < 1000000000) {
+            return String.format("%.0fkk", numero / 1000000);
+        } else if (numero < 1000000000000L) {
+            return String.format("%.0fB", numero / 1000000000);
+        } else {
+            return String.format("%.0fT", numero / 1000000000000L);
+        }
+    }
+
     public static boolean isSpaceInventory(ItemStack item, Player player) {
         int maxStackSize = item.getMaxStackSize();
         int remainingItems = item.getAmount();

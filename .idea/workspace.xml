@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26da04b9-c54d-48f8-b2b2-2eb961504fb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/commands/AdmCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/ItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/api/GiveAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/commands/AdmCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/manager/RewardManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/model/Reward.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/services/RewardServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/ColorConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/ColorConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/ItemEdit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/MessageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/PlayerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CustomSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CustomSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rewards.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2q7ym5Her9XFux23h1JPawW0PJa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Desktop/Meus projeto/Servidores/1.7.10/Crucible-1.7.10-staging-1f40fa2c-server.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-project&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;18=C:/Users/pedro/.jdks/corretto-18.0.2&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.gokan.mreward.utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="myServer" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../../Servidores/1.7.10/Crucible-1.7.10-staging-1f40fa2c-server.jar" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\pedro\Desktop\Meus projeto\Projeto-Meus\mTemplate2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <module name="mTemplate2.main" />
+      <method v="2">
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="build" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26da04b9-c54d-48f8-b2b2-2eb961504fb2" name="Changes" comment="" />
+      <created>1734028063602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734028063602</updated>
+    </task>
+    <servers />
+  </component>
+</project>
