@@ -65,4 +65,15 @@ public class Util {
         return false;
     }
 
+    public static int extractNumberFrom(String input) {
+        if (input == null) {
+            return -1;
+        }
+        String numbersOnly = input.replaceAll("[^0-9]", "");
+        if (numbersOnly.isEmpty()) {
+            return -1;
+        }
+        return Integer.parseInt(numbersOnly);
+    }
+
 }

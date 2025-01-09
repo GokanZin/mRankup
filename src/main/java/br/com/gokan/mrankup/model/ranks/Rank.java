@@ -5,13 +5,17 @@ import br.com.gokan.mrankup.model.ranks.other.ReqRank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.List;
+
 @AllArgsConstructor
 @Getter
 public class Rank {
 
     final int id;
     final String prefix;
-    final String permission;
     final String nome;
-    private ReqRank req ;
+    private ReqRank req;
+    private List<String> comandos;
+    private List<String> grupos;
+
 }
