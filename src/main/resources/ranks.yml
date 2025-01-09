@@ -1,0 +1,24 @@
+#Tipo de requisitos:
+# permissao:
+# money: -> compativel com plugins de economia
+# prestigio: -> Proprio do plugin
+# Points ->
+#
+
+
+ranks:
+  default: #Rank default
+    posicao: 0
+    prefixo: '§7*'
+  GaloIII:
+    posicao: 1
+    prefixo: '§a[Galo]'
+    requisito:
+      permissao: 'galo.1'
+      money: 10000
+    comandos:
+      - '/gamemode 1 {player}'
+    grupos: #Usado para identificar os grupos na gui.yml
+      - GaloIII
+      - GaloII
+      - GaloI

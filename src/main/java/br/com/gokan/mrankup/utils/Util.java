@@ -1,4 +1,4 @@
-package br.com.gokan.mtemplate.utils;
+package br.com.gokan.mrankup.utils;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

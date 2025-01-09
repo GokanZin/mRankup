@@ -5,26 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26da04b9-c54d-48f8-b2b2-2eb961504fb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/commands/AdmCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/ItemBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/api/RankAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/users/RanksCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/users/RankupCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/custom/PlayerRankChangeEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/gui/RankGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/handler/RankupHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/RankManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/other/ReqRank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/user/PlayerRank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/RankServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/storage/cache/RankCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ranks.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/api/GiveAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/commands/AdmCommands.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/manager/RewardManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/model/Reward.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/services/RewardServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/ColorConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/ColorConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/ItemEdit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/MessageBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/PlayerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mreward/utils/frameworks/CustomSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CustomSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rewards.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/commands/AdmCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/adminstrator/AdmCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/ColorConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/ColorConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/ItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/MessageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mtemplate/utils/frameworks/CustomSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CustomSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +43,31 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mRankup" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,9 +85,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Desktop/Meus projeto/Servidores/1.7.10/Crucible-1.7.10-staging-1f40fa2c-server.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Desktop/Meus projeto/Projeto-Meus/mRankup&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -78,9 +112,19 @@
       <option name="WORKING_DIRECTORY" value="C:\Users\pedro\Desktop\Meus projeto\Projeto-Meus\mTemplate2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <module name="mTemplate2.main" />
       <method v="2">
         <option name="Gradle.BeforeRunTask" enabled="true" tasks="build" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>

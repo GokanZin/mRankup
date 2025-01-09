@@ -1,6 +1,6 @@
-package br.com.gokan.mtemplate.commands;
+package br.com.gokan.mrankup.commands.adminstrator;
 
-import br.com.gokan.mtemplate.utils.frameworks.CommandBuilder;
+import br.com.gokan.mrankup.utils.frameworks.CommandBuilder;
 import org.bukkit.command.CommandSender;
 
 public class AdmCommands {
@@ -30,6 +30,7 @@ public class AdmCommands {
                     return false;
                 }).build();
     }
+
 
 
 }

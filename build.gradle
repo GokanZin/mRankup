@@ -20,9 +20,11 @@ repositories {
 dependencies {
     compileOnly fileTree(dir: "C:/Users/pedro/Desktop/Meus projeto/projetos-repository/mGiveReward/libs", include: '*.jar')
     compileOnly fileTree(dir: "libs", include: '*.jar')
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
 }
 
-def namePlugin = 'mTemplate'
+def namePlugin = 'mRankup'
 def lowerCaseNamePlugin = namePlugin.toLowerCase()
 def packet = "${group}.${lowerCaseNamePlugin}.Main"
 def targetJavaVersion = 8

@@ -1,0 +1,8 @@
+#mRankup Configuração
+rank-config:
+    auto-rank: true #Apos ativar a meta de rank o jogador upa automaticamente.
+    delay-auto-rank: 20 #Verificação de 20s
+
+auto-save:
+    enabled: true #Ativar o auto salvamento de rank dos jogadores.
+    interval: 5 #minutos

@@ -1,7 +1,7 @@
-package br.com.gokan.mtemplate;
+package br.com.gokan.mrankup;
 
-import br.com.gokan.mtemplate.commands.AdmCommands;
-import br.com.gokan.mtemplate.utils.ColorConsole;
+import br.com.gokan.mrankup.commands.adminstrator.AdmCommands;
+import br.com.gokan.mrankup.utils.ColorConsole;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    String prefix = "mTemplate";
+    String prefix = "mRankup";
 
 
     @Override
