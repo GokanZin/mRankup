@@ -23,7 +23,7 @@ public final class Main extends JavaPlugin {
     void load(){
         this.configManager = new ConfigManager(this);
         this.rankManager = new RankManager(configManager);
-        rankAPI = new RankAPI(this, configManager, rankManager);
+//        rankAPI = new RankAPI(this, configManager, rankManager);
     }
 
 
