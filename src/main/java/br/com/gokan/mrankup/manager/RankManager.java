@@ -2,10 +2,12 @@ package br.com.gokan.mrankup.manager;
 
 import br.com.gokan.mrankup.model.ranks.Rank;
 import br.com.gokan.mrankup.model.ranks.other.ReqRank;
-import br.com.gokan.mrankup.storage.cache.RankCache;
+import br.com.gokan.mrankup.cache.RankCache;
 import lombok.val;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.ConfigurationSection;
+
+import java.util.Collection;
 
 public class RankManager {
 
@@ -65,5 +67,9 @@ public class RankManager {
         val permission = req.getString("permissao", "");
         val money = req.getDouble("money",0.0);
         return new ReqRank(permission, money);
+    }
+
+    public Collection<Rank> getRanks() {
+        return rankCache.getRankMap().values();
     }
 }

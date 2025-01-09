@@ -1,8 +1,34 @@
 #mRankup Configuração
-rank-config:
-    auto-rank: true #Apos ativar a meta de rank o jogador upa automaticamente.
-    delay-auto-rank: 20 #Verificação de 20s
+database:
+    type: mysql # ou "sqlite"
+    mysql:
+        host: localhost
+        port: 3306
+        database: plugin_db
+        username: root
+        password: password
+    sqlite:
+        path: plugins/mRankup/database.db
 
-auto-save:
-    enabled: true #Ativar o auto salvamento de rank dos jogadores.
-    interval: 5 #minutos
+rank-config:
+    auto-rank: false #Apos ativar a meta de rank o jogador upa automaticamente sem precisar digitar /rankup
+    delay-auto-rank: 5 #Verificação de 5s
+
+commands:
+    rankup:
+        permission: mrankup.rankup
+        command: rankup
+
+topRanks-Holograma: #Depende do plugin Holography(1.7.10 até 1.19) ou DecentHolograma(Versão mais recente)
+    enable: true #Ativar?
+    min-top: 1 #Irá começar do top 1
+    max-top: 10 #Até o top 10
+    top-empty: '§8Ninguem'
+    update: 25 #minutos, atualiza a cada 25 minutos
+    holograma-lines:
+        - ''
+#mrankup setRankMinion <numero do top> #Não funciona nas versões abaixo de 1.8
+topRank-Minions:
+    lore:
+        - ''
+        - ''

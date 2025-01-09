@@ -1,4 +1,4 @@
-package br.com.gokan.mrankup.storage.cache;
+package br.com.gokan.mrankup.cache;
 
 import br.com.gokan.mrankup.model.ranks.Rank;
 

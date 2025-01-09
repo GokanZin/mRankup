@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26da04b9-c54d-48f8-b2b2-2eb961504fb2" name="Changes" comment="[+]">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/cache/PlayerRankCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/DatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/PersistenceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/impl/MySQLDatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/impl/SQLiteDatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/PlayerRankServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/locations.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/api/RankAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/api/RankAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/handler/RankupHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/handler/RankupHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/RankManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/RankManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/Rank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/RankServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/RankServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/storage/cache/RankCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/cache/RankCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
