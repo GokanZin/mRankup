@@ -4,6 +4,7 @@ package br.com.gokan.mrankup.model.ranks;
 import br.com.gokan.mrankup.model.ranks.other.ReqRank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.bukkit.entity.Player;
 
 import java.util.List;
 
@@ -17,5 +18,8 @@ public class Rank {
     private ReqRank req;
     private List<String> comandos;
     private List<String> grupos;
+
+
+
 
 }

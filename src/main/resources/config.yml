@@ -14,16 +14,13 @@ rank-config:
     auto-rank: false #Apos ativar a meta de rank o jogador upa automaticamente sem precisar digitar /rankup
     delay-auto-rank: 5 #Verificação de 5s
 
-commands:
-    rankup:
-        permission: mrankup.rankup
-        command: rankup
+
 
 topRanks-Holograma: #Depende do plugin Holography(1.7.10 até 1.19) ou DecentHolograma(Versão mais recente)
     enable: true #Ativar?
     min-top: 1 #Irá começar do top 1
     max-top: 10 #Até o top 10
-    top-empty: '§8Ninguem'
+    top-empty: '§8* §8Ninguem'
     update: 25 #minutos, atualiza a cada 25 minutos
     holograma-lines:
         - ''

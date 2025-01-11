@@ -53,7 +53,7 @@ public class RankServices {
      * @return o rank anterior, ou null se o rank especificado for o primeiro
      */
     public Rank getPreviousRank(int id) {
-        return rankManager.getRanks().stream().filter(rank -> rank.getId() < id).max(Comparator.comparingInt(Rank::getId)).orElse(getDefaultRank());
+        return rankManager.getRanks().stream().filter(rank -> rank.getId() < id).max(Comparator.comparingInt(Rank::getId)).orElse(getFirstRank());
     }
 
 

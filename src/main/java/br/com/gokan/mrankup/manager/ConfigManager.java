@@ -17,6 +17,8 @@ public class ConfigManager {
     @Getter
     private FileConfiguration rankConfig;
 
+    @Getter FileConfiguration locations;
+
     private final Main main;
 
     public ConfigManager(Main main) {
@@ -32,11 +34,15 @@ public class ConfigManager {
     }
 
     private void loadRankConfig() {
-        File file = new File(main.getDataFolder(), "ranks.yml");
+        rankConfig = isExistFile("ranks.yml");
+    }
+
+    YamlConfiguration isExistFile(String fileName) {
+        File file = new File(main.getDataFolder(), fileName);
         if (!file.exists()) {
-            main.saveResource("ranks.yml", false);
+            main.saveResource(fileName, false);
         }
-        rankConfig = YamlConfiguration.loadConfiguration(file);
+        return YamlConfiguration.loadConfiguration(file);
     }
 
     public void saveRankConfig() {

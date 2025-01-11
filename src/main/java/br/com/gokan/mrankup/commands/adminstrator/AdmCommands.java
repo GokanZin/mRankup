@@ -5,9 +5,9 @@ import org.bukkit.command.CommandSender;
 
 public class AdmCommands {
 
-    String COMMAND = "mreward";
+    String COMMAND = "mrank";
     String PERMISSION = COMMAND + ".adm";
-    String[] ALIASES = new String[] { "mreward", "mrewards" };
+    String[] ALIASES = new String[] { "mrankup", "mranks" };
     public void register(){
         new CommandBuilder(COMMAND)
                 .aliases(ALIASES)
@@ -31,6 +31,33 @@ public class AdmCommands {
                 }).build();
     }
 
+
+    void nextRank(CommandSender sender, String[] args) {
+
+    }
+
+    void previousRank(CommandSender sender, String[] args) {
+
+    }
+
+    void setRank(CommandSender sender, String[] args) {
+
+    }
+
+    void removeRank(CommandSender sender, String[] args) {
+
+    }
+
+    void listRank(CommandSender sender, String[] args) {
+
+    }
+
+    void perfilUser(CommandSender sender, String[] args) {
+
+    }
+    void criarRank(CommandSender sender, String[] args) {
+
+    }
 
 
 }

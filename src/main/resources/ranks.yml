@@ -15,7 +15,7 @@ ranks:
     prefixo: '§a[Galo]'
     requisito:
       permissao: 'galo.1'
-      money: 10000
+      preco: 10000
     comandos:
       - '/gamemode 1 {player}'
     grupos: #Usado para identificar os grupos na gui.yml

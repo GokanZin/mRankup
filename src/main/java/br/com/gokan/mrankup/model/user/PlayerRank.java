@@ -12,6 +12,7 @@ public class PlayerRank {
     @Getter
     @Setter
     int rankid;
+    @Getter
     OfflinePlayer player;
 
 

@@ -1,0 +1,16 @@
+#marcadores:
+#{rank} - {nextRank} - {prevRank} - {progresso} - {rqMoney-nextRank} - {player} - {rqMoney-rank}
+#{}
+EVOLUIU-DE-RANK:
+    #title: '§a{player} Evoluiu de Rank'
+    #subtitle: '§a{player} evoluiu de rank para o rank {nextRank}!'
+    #chat: '§a{player} evoluiu de rank para o rank {newRank}!'
+    #actionBar: '§a{player} evoluiu de rank para o rank {newRank}!'
+    #broadcast: '§a{player} evoluiu de rank para o rank {newRank}!'
+    #SOUND: ORB_PICKUP
+REBAIXADO:
+    #title: '§c{player} Rebaixado'
+    #chat: '§c{player} rebaixado para o rank {prevRank}!'
+    #actionBar: '§c{player} rebaixado para o rank {newRank}!'
+    #broadcast: '§c{player} rebaixado para o rank {newRank}!'
+    #SOUND: ORB_PICKUP

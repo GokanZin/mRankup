@@ -1,4 +1,4 @@
 package br.com.gokan.mrankup.gui;
 
-public class RankGui {
+public class RanksGui {
 }
