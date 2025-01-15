@@ -2,10 +2,14 @@ package br.com.gokan.mrankup.utils.frameworks;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabCompleter;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
-public abstract class CommandHandler extends Command {
+public abstract class CommandHandler extends Command implements TabCompleter {
 
     public CommandHandler(String name) {
         super(name);
@@ -21,7 +25,6 @@ public abstract class CommandHandler extends Command {
             sender.sendMessage("§cOps.. Você não tem permissão!!");
             return false;
         }
-
         return onExecute(sender, label, args);
     }
 
@@ -30,4 +33,6 @@ public abstract class CommandHandler extends Command {
     public void setAliases(String... aliases) {
         this.setAliases(Arrays.asList(aliases));
     }
+
+
 }

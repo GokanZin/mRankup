@@ -5,30 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26da04b9-c54d-48f8-b2b2-2eb961504fb2" name="Changes" comment="[+]">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/PlayerJoinListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/PlayerQuintListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/PlayerRankManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/MessageBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/SubCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/gui.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/api/RankAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/api/RankAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/cache/PlayerRankCache.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/adminstrator/AdmCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/adminstrator/AdmCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/users/RanksCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/commands/users/RanksCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/custom/PlayerRankChangeEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/custom/PlayerRankChangeEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/gui/RankGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/gui/RanksGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/handler/RankupHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/PlayerJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/events/PlayerJoinListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/user/PlayerRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/user/PlayerRank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/PlayerRankManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/PlayerRankManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/RankManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/manager/RankManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/other/ReqRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/model/ranks/other/ReqRank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/PersistenceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/impl/MySQLDatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/impl/MySQLDatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/impl/SQLiteDatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/repository/impl/SQLiteDatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/PlayerRankServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/PlayerRankServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/RankServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/services/RankServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gokan/mrankup/utils/frameworks/CommandRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ranks.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ranks.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +76,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.Build mRankup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mRankup [build].executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.myServer.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Desktop/Meus projeto/Projeto-Meus/mRankup/libs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Desktop/Meus projeto/Servidores/1.7.10/Crucible-1.7.10-staging-1f40fa2c-server.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -112,9 +111,10 @@
     <configuration name="myServer" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/../../Servidores/1.7.10/Crucible-1.7.10-staging-1f40fa2c-server.jar" />
       <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\pedro\Desktop\Meus projeto\Projeto-Meus\mTemplate2" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\pedro\Desktop\Meus projeto\Servidores\1.7.10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <module name="mRankup.main" />
       <method v="2">
         <option name="Gradle.BeforeRunTask" enabled="true" tasks="build" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
       </method>
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736464474110</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[+]">
+      <option name="closed" value="true" />
+      <created>1736557562224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736557562224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

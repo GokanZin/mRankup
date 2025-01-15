@@ -32,7 +32,7 @@ def targetJavaVersion = 8
 
 jar {
 //    archiveFileName.set("C:/Users/Pedro/Desktop/Projeto_Plugins_Vender/Servidor_Teste/plugins/${namePlugin}.jar")
-    archiveFileName.set("C:/Users/pedro/Desktop/Meus projeto/Servidores/1.12.2/plugins/${namePlugin}.jar")
+    archiveFileName.set("C:/Users/pedro/Desktop/Meus projeto/Servidores/1.7.10/plugins/${namePlugin}.jar")
 }
 
 

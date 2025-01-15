@@ -39,9 +39,7 @@ public class PersistenceManager {
                 throw new IllegalArgumentException("Tipo de banco de dados inválido: " + databaseType);
             }
         } catch (Exception e) {
-            System.err.println("Erro ao conectar ao banco de dados. Fallback para SQLite.");
-            e.printStackTrace();
-            connectSQLite();
+            System.err.println("Erro ao conectar ao banco de dados.");
         }
     }
 
@@ -49,7 +47,12 @@ public class PersistenceManager {
     private void connectSQLite() {
         String path = config.getString(SQLITE_PATH_KEY, "database.sqlite");
         databaseManager = new SQLiteDatabaseManager(path);
-        System.out.println("Conectado ao SQLite no caminho: " + path);
+        try {
+            databaseManager.connect();
+            System.out.println("Conectado ao SQLite.");
+        } catch (Exception e) {
+            throw new RuntimeException("Ocorreu um erro ao se conectar ao SQLite. Detalhes do erro -> " + e.getMessage(), e);
+        }
     }
 
 

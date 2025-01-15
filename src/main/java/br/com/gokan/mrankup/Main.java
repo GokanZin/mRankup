@@ -24,7 +24,10 @@ public final class Main extends JavaPlugin {
     RankManager rankManager;
     PlayerRankManager playerRankManager;
     PersistenceManager persistenceManager;
-    void load(){
+
+
+    @Override
+    public void onLoad() {
         this.configManager = new ConfigManager(this);
         this.rankManager = new RankManager(configManager);
     }
@@ -35,13 +38,14 @@ public final class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage( ColorConsole.GREEN + " Plugin foi inicializado com sucesso!" + ColorConsole.RESET);
         Bukkit.getConsoleSender().sendMessage(ColorConsole.GREEN + " Criador: [Gokan]" + ColorConsole.RESET);
         Bukkit.getConsoleSender().sendMessage(ColorConsole.GREEN + " Suporte: https://discord.gg/22gnYtuTTs" + ColorConsole.RESET);
-        rankManager.initRanks(Bukkit.getConsoleSender());
         this.persistenceManager = new PersistenceManager(configManager);
-        this.playerRankManager = new PlayerRankManager(persistenceManager.getDatabaseManager());
         rankAPI = new RankAPI(this, rankManager, configManager, playerRankManager);
+        rankManager.initRanks(Bukkit.getConsoleSender());
+        this.playerRankManager = new PlayerRankManager(persistenceManager.getDatabaseManager());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(playerRankManager), this);
         Bukkit.getConsoleSender().sendMessage(ColorConsole.GREEN + "<-------[" + prefix + "]------->" + ColorConsole.RESET);
-        new AdmCommands().register();
+        new AdmCommands(this).register();
+        getCommand("mrankup").setTabCompleter();
     }
 
     @Override

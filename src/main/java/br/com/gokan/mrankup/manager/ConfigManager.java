@@ -13,11 +13,11 @@ public class ConfigManager {
 
     @Getter
     private FileConfiguration config;
-
     @Getter
     private FileConfiguration rankConfig;
-
     @Getter FileConfiguration locations;
+    @Getter
+    private FileConfiguration messages;
 
     private final Main main;
 
@@ -34,25 +34,38 @@ public class ConfigManager {
     }
 
     private void loadRankConfig() {
-        rankConfig = isExistFile("ranks.yml");
+        File file = getFile("ranks.yml");
+        if (!file.exists()) {
+            main.saveResource("ranks.yml", false);
+        }
+        rankConfig = YamlConfiguration.loadConfiguration(file);
     }
 
-    YamlConfiguration isExistFile(String fileName) {
-        File file = new File(main.getDataFolder(), fileName);
-        if (!file.exists()) {
-            main.saveResource(fileName, false);
-        }
-        return YamlConfiguration.loadConfiguration(file);
-    }
 
     public void saveRankConfig() {
-        File file = new File(main.getDataFolder(), "ranks.yml");
+        File file = getFile("ranks.yml");
         try {
             rankConfig.save(file);
         } catch (IOException e) {
             main.getLogger().severe("Não foi possível salvar ranks.yml: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    void loadMessages() {
+        File file = getFile("messages.yml");
+        if (!file.exists()) {
+            main.saveResource("messages.yml", false);
+        }
+        messages = YamlConfiguration.loadConfiguration(file);
+    }
+
+    File getFile(String fileName) {
+        File file = new File(main.getDataFolder(), fileName);
+        if (!file.exists()) {
+            main.saveResource(fileName, false);
+        }
+        return file;
     }
 
     public void reloadAllConfigs(CommandSender sender) {

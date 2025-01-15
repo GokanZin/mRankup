@@ -1,16 +1,27 @@
 #marcadores:
 #{rank} - {nextRank} - {prevRank} - {progresso} - {rqMoney-nextRank} - {player} - {rqMoney-rank}
 #{}
-EVOLUIU-DE-RANK:
-    #title: '§a{player} Evoluiu de Rank'
-    #subtitle: '§a{player} evoluiu de rank para o rank {nextRank}!'
-    #chat: '§a{player} evoluiu de rank para o rank {newRank}!'
-    #actionBar: '§a{player} evoluiu de rank para o rank {newRank}!'
-    #broadcast: '§a{player} evoluiu de rank para o rank {newRank}!'
-    #SOUND: ORB_PICKUP
-REBAIXADO:
-    #title: '§c{player} Rebaixado'
-    #chat: '§c{player} rebaixado para o rank {prevRank}!'
-    #actionBar: '§c{player} rebaixado para o rank {newRank}!'
-    #broadcast: '§c{player} rebaixado para o rank {newRank}!'
-    #SOUND: ORB_PICKUP
+
+evoluiu-de-rank:
+    message: '§a{player} evoluiu de rank para o rank {nextRank}!'
+    type: chat, actionBar #tipos: chat(all), title(1.8+), subtitle(1.8+), actionBar(1.8), broadcast(all)
+    sound: null #som ao upar de rank
+
+rebaixado-de-rank:
+    message:
+    - ''
+    - 'Foi rebaixado!'
+    - ''
+    type: chat, actionBar #tipos: chat(all), title(1.8+), subtitle(1.8+), actionBar(1.8), broadcast(all)
+    sound: null #som ao upar de rank
+
+comandos: #chat normal
+    - ''
+    - ' /mrank nextRank (player) - Forçar o proxima rank do jogador - Default'
+    - ' /mrank nextRank (player) (true/false enviar mensagem) (true/false) (executar os beneficio do rank) - Forçar o proxima rank do jogador'
+    - ' /mrank prevRank (player) (true/false) enviar mensagem (true/false) executar beneficios - Forçar o rank anterior do jogador'
+    - ' /mrank set {player} {posicao} - default'
+    - ' /mrank set {player} {posicao} (true/false) enviar mensagem (true/false) executar beneficios - Definir o rank do jogador'
+    - ''
+
+

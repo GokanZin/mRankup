@@ -21,24 +21,27 @@ public class PlayerRankManager {
     @Setter(lombok.AccessLevel.NONE)
     private HashMap<UUID, PlayerRank> playerRank = new HashMap<>();
     DatabaseManager databaseManager;
-    RankServices rankServices;
 
     public PlayerRankManager(DatabaseManager databaseManager){
         this.databaseManager = databaseManager;
-        this.rankServices = Main.getRankAPI().getRankServices();
     }
     public void load(Player player){
-        if (playerRank.containsKey(player.getUniqueId())) return;
+        if (playerRank.containsKey(player.getUniqueId())){
+            Bukkit.getConsoleSender().sendMessage("Rank ja carregado");
+            return;
+        }
         RankServices rankServices = Main.getRankAPI().getRankServices();
-        PlayerRank playerRank;
         databaseManager.getData(player)
                 .thenAccept(rank -> {
                     if (rank == null) {
                         setLoad(player, rankServices.getFirstRank().getId());
+                        Bukkit.getConsoleSender().sendMessage("Rank nao encontrado");
                         return;
                     }
+                    Bukkit.getConsoleSender().sendMessage("Rank  encontrado");
                     setLoad(player, rank.getRankid());
                 }).exceptionally(ex -> {
+                    ex.printStackTrace();
                     return null;
                 }).join();
 
@@ -47,13 +50,16 @@ public class PlayerRankManager {
     void setLoad(Player player, int id){
         PlayerRank playerRank = new PlayerRank(id, player);
         this.playerRank.put(player.getUniqueId(), playerRank);
+        databaseManager.saveData(player.getUniqueId(), id);
     }
 
     public PlayerRank getPlayerRank(OfflinePlayer player){
+        RankServices rankServices = Main.getRankAPI().getRankServices();
         return playerRank.getOrDefault(player.getUniqueId(), new PlayerRank(rankServices.getFirstRank().getId(), player));
     }
 
     public PlayerRank getPlayerRank(UUID uuid){
+        RankServices rankServices = Main.getRankAPI().getRankServices();
         return playerRank.getOrDefault(uuid, new PlayerRank(rankServices.getFirstRank().getId(), null));
     }
 

@@ -11,6 +11,7 @@ public class PlayerJoinListener implements Listener{
 
     PlayerRankManager playerRankManager;
 
+
     @EventHandler
     void onPlayerJoinEvent(org.bukkit.event.player.PlayerJoinEvent event){
         playerRankManager.load(event.getPlayer());

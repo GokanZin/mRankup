@@ -90,6 +90,6 @@ public class MySQLDatabaseManager implements DatabaseManager {
 
     @Override
     public Map<UUID, PlayerRank> getAllDataRankMap() {
-        return Map.of();
+        return null;
     }
 }

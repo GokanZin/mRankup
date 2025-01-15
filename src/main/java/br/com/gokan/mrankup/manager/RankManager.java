@@ -11,7 +11,7 @@ import java.util.Collection;
 
 public class RankManager {
 
-    RankCache rankCache;
+    RankCache rankCache = new RankCache();
 
     ConfigManager configManager;
     public RankManager(ConfigManager configManager) {
@@ -55,7 +55,7 @@ public class RankManager {
             return null;
         }
         val posicao = rank.getInt("posicao");
-        val rq = getReq(rank.getConfigurationSection("requisitos"));
+         ReqRank rq = getReq(rank.getConfigurationSection("requisito"));
         val prefixo = rank.getString("prefixo", "");
         val comandos = rank.getStringList("comandos");
         val grupos = rank.getStringList("grupos");
@@ -64,9 +64,13 @@ public class RankManager {
 
 
     ReqRank getReq(ConfigurationSection req){
+        if (req == null) return null;
         val permission = req.getString("permissao", "");
         val money = req.getDouble("money",0.0);
-        return new ReqRank(permission, money);
+        ReqRank rq = new ReqRank();
+        rq.setMoney(money);
+        rq.setPermission(permission);
+        return rq;
     }
 
     public Collection<Rank> getRanks() {
