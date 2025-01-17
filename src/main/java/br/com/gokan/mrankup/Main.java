@@ -45,7 +45,6 @@ public final class Main extends JavaPlugin {
         this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(playerRankManager), this);
         Bukkit.getConsoleSender().sendMessage(ColorConsole.GREEN + "<-------[" + prefix + "]------->" + ColorConsole.RESET);
         new AdmCommands(this).register();
-        getCommand("mrankup").setTabCompleter();
     }
 
     @Override

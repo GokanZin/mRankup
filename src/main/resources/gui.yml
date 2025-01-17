@@ -1,3 +1,18 @@
 gui-upar:
   title: ''
   size: 3 #até o 6
+
+
+
+gui-ranks:
+  title: ''
+  size:  9
+  items:
+    loop-ranks:
+      nome: '{posicao} | {rank-nome}'
+      slots: 10,11,12,13,14,15,16,17,18
+      action: none #ação
+      lore:
+        - ''
+        - ' {grupos}'
+        - ''

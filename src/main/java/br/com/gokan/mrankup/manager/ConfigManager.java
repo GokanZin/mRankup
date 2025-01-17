@@ -9,15 +9,16 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.File;
 import java.io.IOException;
 
+@Getter
 public class ConfigManager {
 
-    @Getter
     private FileConfiguration config;
-    @Getter
+
     private FileConfiguration rankConfig;
-    @Getter FileConfiguration locations;
-    @Getter
+    FileConfiguration locations;
     private FileConfiguration messages;
+
+    private FileConfiguration gui;
 
     private final Main main;
 
